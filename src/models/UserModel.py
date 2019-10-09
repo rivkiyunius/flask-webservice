@@ -30,7 +30,7 @@ class UserModel(db.Model):
     def update(self, data):
         for key, item in data.items():
             if key == 'password':
-                self.password = self.__generate_hash(value)
+                self.password = self.__generate_hash(data.get('password'))
             setattr(self, key, item)
         self.modified_at = datetime.datetime.utcnow()
         db.session.commit()
