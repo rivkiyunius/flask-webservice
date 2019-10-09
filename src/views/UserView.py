@@ -80,12 +80,14 @@ def login():
 
     token = Auth.generate_token(ser_data.get("id"))
 
+    print("TOKEN: ", token)
+
     t['jwt_token'] = token
     json_datas['status'] = 200
     json_datas['result'] = t
     json_datas['error'] = None
 
-    return custom_response(__json_data, 200)
+    return custom_response(json_datas, 200)
 
 
 @user_api.route('/me?id=<int:user_id>', methods=['GET'])
