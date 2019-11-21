@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c210199e-d92c-47c2-9850-956d5e96c24f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/flask-webservice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/DatasetModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/TrainingViews.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/d68b0a1811e5_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/d68b0a1811e5_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/BlogpostModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/BlogpostModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/UserModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/UserModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/UserView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/UserView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/TrainingViews.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/TrainingViews.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +86,8 @@
       <workItem from="1574312244592" duration="710000" />
       <workItem from="1574314289114" duration="1652000" />
       <workItem from="1574325960757" duration="4834000" />
-      <workItem from="1574346048421" duration="8087000" />
+      <workItem from="1574346048421" duration="8282000" />
+      <workItem from="1574357636574" duration="3163000" />
     </task>
     <servers />
   </component>

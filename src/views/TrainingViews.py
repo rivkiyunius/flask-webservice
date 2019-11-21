@@ -14,28 +14,34 @@ def train():
     # get params from request
     params = request.get_json()
 
-    # read dataset
-    # iris = datasets.load_iris()
-    # X, y = iris.data, iris.target
-
     x = DatasetModel.get_x_dataset()
     y = DatasetModel.get_y_dataset()
     data_x = train_schema.dump(x, many=True).data
     data_y = train_schema.dump(y, many=True).data
-    # x_list = list(data_x.values())
-    # y_list = list(data_y.values())
+    value = [[] for _ in range(len(data_x))]
+    value_y = [[] for _ in range(len(data_y))]
+    for data in range(len(data_x)):
+        value[data].append(data_x[data].get("age", ""))
+        value[data].append(data_x[data].get("bmi", ""))
+        value[data].append(data_x[data].get("diabetes_pedigree_function", ""))
+        value[data].append(data_x[data].get("diastolic_blood_pressure", ""))
+        value[data].append(data_x[data].get("number_of_pregnancy", ""))
+        value[data].append(data_x[data].get("plasma_glucose_concentration", ""))
+        value[data].append(data_x[data].get("triceps_skin_thickness", ""))
+        value_y[data].append(data_y[data].get("test_result", ""))
+    print(value_y)
 
     # fit model
-    # clf = svm.SVC(
-    #     C=1.0,
-    #     probability=True
-    # )
-    # clf.fit(data_x, data_y)
+    clf = svm.SVC(
+        C=1.0,
+        probability=True
+    )
+    clf.fit(value, value_y)
 
     # persist model
-    # joblib.dump(clf, 'model.pkl')
-    # b = clf.score(data_x, data_y)
-    return jsonify(200, data_x[0], None)
+    joblib.dump(clf, 'model.pkl')
+    b = clf.score(value, value_y)
+    return jsonify({'hasil': b})
     # return jsonify({'hasil': y})
 
 
