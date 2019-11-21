@@ -80,8 +80,6 @@ def login():
 
     token = Auth.generate_token(ser_data.get("id"))
 
-    print("TOKEN: ", token)
-
     t['jwt_token'] = token
     json_datas['status'] = 200
     json_datas['result'] = t
@@ -131,7 +129,6 @@ def get_me():
     user = UserModel.get_one_user(g.user.get('id'))
     ser_user = user_schema.dump(user).data
     return custom_response(__json_data(200, ser_user, None), 200)
-
 
 def __json_data(status, data, error):
     json_res = {

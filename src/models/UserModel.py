@@ -47,8 +47,8 @@ class UserModel(db.Model):
 
     @staticmethod
     def get_all_users():
-        return UserModel.query.all()
-
+        # return UserModel.query.all()
+        return db.engine.execute('SELECT * FROM users')
     @staticmethod
     def get_one_user(id):
         sql = UserModel.query.get(id)

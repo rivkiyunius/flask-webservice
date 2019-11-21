@@ -5,6 +5,7 @@ from .models import db, bcrypt
 
 from .views.UserView import user_api as user_blueprint
 from .views.BlogpostView import blogpost_api as blog_blueprint
+from .views.TrainingViews import train_api as train_blueprint
 
 
 def create_app(env_name):
@@ -19,6 +20,7 @@ def create_app(env_name):
 
     app.register_blueprint(user_blueprint, url_prefix='/api/v1/users')
     app.register_blueprint(blog_blueprint, url_prefix='/api/v1/blogposts')
+    app.register_blueprint(train_blueprint, url_prefix='/api/v1/training')
 
     @app.route('/', methods=['GET'])
     def index():

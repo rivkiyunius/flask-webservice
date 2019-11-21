@@ -36,7 +36,8 @@ class BlogpostModel(db.Model):
 
     @staticmethod
     def get_all_blogposts():
-        return BlogpostModel.query.all()
+        return db.engine.execute("SELECT * FROM blogposts")
+        # return BlogpostModel.query.all()
 
     @staticmethod
     def get_one_blogposts(id):
