@@ -19,6 +19,7 @@ pytest-cov = "*"
 pytest = "*"
 sklearn = "*"
 joblib = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.7"
