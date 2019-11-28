@@ -122,7 +122,7 @@ def update():
 def delete():
     user = UserModel.get_one_user(g.user.get('id'))
     user.delete()
-    return custom_response(__json_data(204, 'User has been deleted', None), 204)
+    return custom_response(__json_data(204, 'User has been deleted', None), 200)
 
 
 @user_api.route('/me', methods=['GET'])
