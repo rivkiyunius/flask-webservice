@@ -56,6 +56,7 @@ def get_all():
 @user_api.route('/login', methods=['POST'])
 def login():
     json_datas = {}
+    t = {}
 
     req_data = request.get_json()
 
@@ -79,7 +80,9 @@ def login():
 
     token = Auth.generate_token(ser_data.get("id"))
 
-    t = {"jwt_token": token}
+    print("TOKEN", token)
+
+    t['jwt_token'] = token
     json_datas['status'] = 200
     json_datas['result'] = t
     json_datas['error'] = None
