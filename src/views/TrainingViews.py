@@ -1,6 +1,5 @@
 from flask import request, Response, json, Blueprint, g, jsonify
 from sklearn import svm
-from sklearn import datasets
 from sklearn.externals import joblib
 
 from ..models.DatasetModel import DatasetModel, DatasetSchema
@@ -9,10 +8,8 @@ train_api = Blueprint('train', __name__)
 train_schema = DatasetSchema()
 
 
-@train_api.route('/train', methods=['POST'])
+@train_api.route('/train', methods=['GET'])
 def train():
-    # get params from request
-    params = request.get_json()
 
     x = DatasetModel.get_x_dataset()
     y = DatasetModel.get_y_dataset()
@@ -29,7 +26,6 @@ def train():
         value[data].append(data_x[data].get("plasma_glucose_concentration", ""))
         value[data].append(data_x[data].get("triceps_skin_thickness", ""))
         value_y[data].append(data_y[data].get("test_result", ""))
-    print(value_y)
 
     # fit model
     clf = svm.SVC(

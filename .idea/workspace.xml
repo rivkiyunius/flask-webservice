@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c210199e-d92c-47c2-9850-956d5e96c24f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/TrainingViews.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/TrainingViews.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +37,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -87,7 +88,14 @@
       <workItem from="1574314289114" duration="1652000" />
       <workItem from="1574325960757" duration="4834000" />
       <workItem from="1574346048421" duration="8282000" />
-      <workItem from="1574357636574" duration="3163000" />
+      <workItem from="1574357636574" duration="3621000" />
+      <workItem from="1574394125054" duration="393000" />
+      <workItem from="1574403870633" duration="481000" />
+      <workItem from="1574407886228" duration="435000" />
+      <workItem from="1574433212047" duration="1341000" />
+      <workItem from="1574693983215" duration="1953000" />
+      <workItem from="1574738099510" duration="484000" />
+      <workItem from="1574738594968" duration="425000" />
     </task>
     <servers />
   </component>
