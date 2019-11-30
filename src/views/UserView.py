@@ -17,8 +17,7 @@ def create():
 
     user_in_db = UserModel.get_user_by_email(data.get('email'))
     if user_in_db:
-        message = {__json_data(400, None, 'User already exist, please supply another email address')}
-        return custom_response(message, 400)
+        return custom_response(__json_data(400, None, 'User already exist, please supply another email address'), 400)
 
     user = UserModel(data)
     user.save()
@@ -122,7 +121,7 @@ def update():
 def delete():
     user = UserModel.get_one_user(g.user.get('id'))
     user.delete()
-    return custom_response(__json_data(204, 'User has been deleted', None), 200)
+    return custom_response(__json_data(200, 'User has been deleted', None), 200)
 
 
 @user_api.route('/me', methods=['GET'])
