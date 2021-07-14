@@ -64,7 +64,7 @@ class UserModel(db.Model):
 
 class UserShcema(Schema):
     id = fields.Int(dump_only=True)
-    name = fields.Str(required=True)
+    name = fields.Str(required=False)
     email = fields.Email(required=True)
     password = fields.Str(required=True)
     created_at = fields.DateTime(dump_only=True)
